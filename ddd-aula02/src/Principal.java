@@ -17,7 +17,7 @@ public class Principal {
         nome = leitor.nextLine();
         System.out.println("Bom dia " + nome +"!");
         System.out.println("Digite sua idade: ");
-        idade= leitor.nextInt();
+        idade = leitor.nextInt();
     }
 
 }
