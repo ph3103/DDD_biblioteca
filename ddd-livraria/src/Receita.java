@@ -18,22 +18,21 @@ public class Receita {
         System.out.println(descrição);
         System.out.println("ingredientes\n" + ingredientes);
         System.out.println(",modopreparo\n" + modopreparo);
-
-        //Método com retorno
-        public String exibirReceita2(){
-            String mensagem = "Receita de " + nomeReceita +
-                     "\n==========================" +
-                     "\nPublicado por:\" + autorReceita"
-                     "dificuldade + \"\"
-
-
-
-
     }
 
+        //Método com retorno
+        String exibirReceita2;{
+            String mensagem = "Receita de " + nomeReceita +
+                     "\n==========================" +
+                     "\nPublicado por:\" + autorReceita";
+            String s = "dificuldade + \"\";";
+
+
+        }
 
 
 
 
 
-}
+
+

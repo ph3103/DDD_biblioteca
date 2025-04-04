@@ -19,13 +19,15 @@ public class TesteLivro {
         //Criar um objeto -> Instanciar um objeto
         //  Tipo  nomeObjeto = new Tipo();
         Livro meuLivro = new Livro();
-        meuLivro.titulo = "UML 2";
-        meuLivro.autor = "Gilleanes Guedes";
-        meuLivro.editora = novatec;
-        meuLivro.preco = 50;
-        meuLivro.paginas = 484;
+        meuLivro.setTitulo();titulo = "UML 2";
+        meuLivro.setautor();
+        String autor = "Gilleanes Guedes";
+        meuLivro.setEditora();editora = novatec;
+        meuLivro.setpreco();preco = 50;
+        meuLivro.setpaginas();
+        int paginas = 484;
         // meuLivro.tipoCapa = br.com.fiap.enums.TipoCapaEnum.DURA;
-        meuLivro.resumo = "UML abordagem prática....";
+        ((Livro<?>) meuLivro).resumo = "UML abordagem prática....";
         meuLivro.exibirLivro();
 
         Livro livroDaGiovanna = new Livro(novatec);
@@ -43,7 +45,7 @@ public class TesteLivro {
         else if(opcao == 2)
             livro.tipoCapa = TipoCapaEnum.DURA;
         else
-            livro.tipoCapa = TipoCapaEnum.PERSONALIZADA;
+            ((Livro<?>) livro).tipoCapa = TipoCapaEnum.PERSONALIZADA;
 
 
         Livro livroTeste = new Livro("titulo", "autor", 289,

@@ -3,15 +3,15 @@ package br.com.fiap.models;
 
 import br.com.fiap.enums.TipoCapaEnum;
 
-public class Livro {
+public class Livro<editora extends br.com.fiap.models.Editora> {
     //Atributo tipo nomeAtributo;
-    private String titulo;
-    private String autor;
+    public String titulo;
+    public String autor;
     private double preco;
     private br.com.fiap.models.Editora editora;
     private int paginas;
-    private String resumo;
-    private TipoCapaEnum tipoCapa; //COMUM, DURA, PERSONALIZADA
+    public String resumo;
+    public TipoCapaEnum tipoCapa; //COMUM, DURA, PERSONALIZADA
 
     //Construtor
     //Sobrecarga de métodos -> Métodos com mesmo nome porém assinatura diferente
@@ -36,6 +36,14 @@ public class Livro {
         this.tipoCapa = tipoCapa;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
     public Livro(String titulo, editora editora, TipoCapaEnum tipoCapa) {
         this.titulo = titulo;
         this.editora = editora;
@@ -55,6 +63,21 @@ public class Livro {
     public String exibirTipoCapa(){
         return "";
 
+    }
+
+    public void setTitulo() {
+    }
+
+    public void setautor() {
+    }
+
+    public void setpaginas() {
+    }
+
+    public void setpreco() {
+    }
+
+    public void setEditora() {
     }
 }
 

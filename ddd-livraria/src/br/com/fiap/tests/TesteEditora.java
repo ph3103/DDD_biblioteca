@@ -7,4 +7,4 @@ public class TesteEditora {
         //Tipo nomeObjeto = new Construtor
         Editora editora = new Editora("Novatec");
         editora.site = ("novatec.com.br");
-    }
+    }}

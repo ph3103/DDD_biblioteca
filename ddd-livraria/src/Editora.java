@@ -1,9 +1,9 @@
 package br.com.fiap.models;
 
 public class Editora {
-    private String nome;
-    private String site;
-    private String telefone;
+    public String nome;
+    public String site;
+    public String telefone;
 
     /*
      * Construtor -> descrever como o objeto será criado
